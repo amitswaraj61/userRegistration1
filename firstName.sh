@@ -31,4 +31,14 @@ pat=^[a-z]{3}\.[a-zA-Z]{3}\@[a-zA-Z]{3,10}\.[co]{2}\.[a-z]{2}$
          echo email valid
      else
          echo email invalid
-     fi 
+     fi
+
+echo "enter the phone"
+read phone
+pat=^[0-9]{2}[[:space:]][0-9]{10}$
+    if [[ $phone =~ $pat ]]
+       then
+         echo valid
+       else
+         echo invalid
+    fi 
