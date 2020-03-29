@@ -10,3 +10,14 @@ pat=^[A-Z]{1}[a-z]{2,}$
     else
          echo invalid
     fi
+
+echo "enter the second name"
+read name
+pat=^[A-Z]{1}[a-z]{2,}$
+
+     if [[ $name =~ $pat ]]
+         then
+           echo valid name
+      else
+           echo invalid name
+      fi 
