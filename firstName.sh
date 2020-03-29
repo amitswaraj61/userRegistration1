@@ -42,3 +42,13 @@ pat=^[0-9]{2}[[:space:]][0-9]{10}$
        else
          echo invalid
     fi 
+
+echo "enter the password"
+read pass
+pat=^[a-zA-Z0-9]{8,}$
+    if [[ $pass =~ $pat ]]
+       then
+         echo valid
+    else
+         echo invalid
+    fi
