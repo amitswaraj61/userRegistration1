@@ -52,3 +52,13 @@ pat=^[a-zA-Z0-9]{8,}$
     else
          echo invalid
     fi
+
+echo "enter the password"
+read pass
+pat=^((?=.*[A-Z])([a-zA-Z0-9]){8,})$
+     if [[ $pass =~ $pat ]]
+        then
+            echo valid password
+      else
+            echo invalid password
+       fi
